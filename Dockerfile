@@ -42,9 +42,9 @@ COPY . /root/InvJac
 # Build the project
 WORKDIR /root/InvJac/phc/PHCpack
 
-# RUN echo "1" | alr toolchain --select gnat_native
-# RUN echo "1" | alr toolchain --select gprbuild
-# RUN alr build
+RUN echo "1" | alr toolchain --select gnat_native
+RUN echo "1" | alr toolchain --select gprbuild
+RUN alr build
 
 WORKDIR /root/InvJac
 
